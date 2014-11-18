@@ -15,4 +15,16 @@ public class FizzBuzzTest {
         FizzBuzz fizzbuzz = new FizzBuzz();
         assertFalse(fizzbuzz.isDivisibleByThree(1));
     }
+
+    @Test
+    public void isDivisibleByFive(){
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        assertTrue(fizzbuzz.isDivisibleByFive(5));
+    }
+
+    @Test
+    public void isNotDivisibleByFive(){
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        assertFalse(fizzbuzz.isDivisibleByFive(1));
+    }
 }
