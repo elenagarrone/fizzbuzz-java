@@ -30,4 +30,14 @@ public class FizzBuzzTest {
     public void isNotDivisibleByFive(){
         assertFalse(fizzbuzz.isDivisibleByFive(1));
     }
+
+    @Test
+    public void isDivisibleByFifteen(){
+        assertTrue(fizzbuzz.isDivisibleByFifteen(15));
+    }
+
+    @Test
+    public void isNotDivisibleByFifteen(){
+        assertFalse(fizzbuzz.isDivisibleByFifteen(1));
+    }
 }
