@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -39,5 +40,15 @@ public class FizzBuzzTest {
     @Test
     public void isNotDivisibleByFifteen(){
         assertFalse(fizzbuzz.isDivisibleByFifteen(1));
+    }
+
+    @Test
+    public void shoutFizz(){
+        assertEquals("Fizz", fizzbuzz.shout(3));
+    }
+
+    @Test
+    public void shoutBuzz(){
+        assertEquals("Buzz", fizzbuzz.shout(5));
     }
 }

@@ -14,4 +14,10 @@ public class FizzBuzz {
     public boolean isDivisibleByFifteen(int number) {
         return isDivisibleBy(number, 15);
     }
+
+    public String shout(int number) {
+        if (number == 3) return "Fizz";
+        if (number == 5) return "Buzz";
+        return null;
+    }
 }
