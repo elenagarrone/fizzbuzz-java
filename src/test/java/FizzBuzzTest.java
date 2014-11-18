@@ -56,4 +56,9 @@ public class FizzBuzzTest {
     public void shoutFizzBuzz(){
         assertEquals("FizzBuzz", fizzbuzz.shout(15));
     }
+
+    @Test
+    public void shoutNumber(){
+        assertEquals("1", fizzbuzz.shout(1));
+    }
 }
